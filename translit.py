@@ -20,8 +20,7 @@ if __name__ == "__main__":
 	for to_trans in to_trans_dsets:
 		done_word = False
 		while not done_word:
-			#data = os.popen("proxychains trans -b -t=af+sq+am+ar+be+hy+az+ba+eu+bn+bs+bg+yue+ca+ceb+ny+zh-CN+co+hr+cs+da+nl+mhr+emj+eo+et+fj+tl+fi+fr+fy+gl+ka+de+el+gu+ht+ha+haw+he+mrj+hi+hmn+id+mww+hu+is+ig+ga+it+ja+jv+kn+kk+km+tlh+th-Qaak+ko+ku+ky+lo+la+lv+lt+lb+mk+mg+ms+ml+mt+mi+mr+mn+my+ne+no+pap+ps+fa+pl+pt+pa+otq+ro+sr-Latn+ru+sm+gd+sr-Cyrl+st+sn+sd+si+sk+sl+so+es+su+sw+sv+ty+tg+ta+tt+te+th+to+tr+udm+uk+ur+uz+vi+cy+xh+yi+yo+yua+zu \"{0}\"".format(to_trans)).read()
-			data = os.popen("proxychains trans -b -t=af+sq+am+ar+be \"hello\"").read()
+			data = os.popen("proxychains trans -b -t=af+sq+am+ar+be+hy+az+ba+eu+bn+bs+bg+yue+ca+ceb+ny+zh-CN+co+hr+cs+da+nl+mhr+emj+eo+et+fj+tl+fi+fr+fy+gl+ka+de+el+gu+ht+ha+haw+he+mrj+hi+hmn+id+mww+hu+is+ig+ga+it+ja+jv+kn+kk+km+tlh+th-Qaak+ko+ku+ky+lo+la+lv+lt+lb+mk+mg+ms+ml+mt+mi+mr+mn+my+ne+no+pap+ps+fa+pl+pt+pa+otq+ro+sr-Latn+ru+sm+gd+sr-Cyrl+st+sn+sd+si+sk+sl+so+es+su+sw+sv+ty+tg+ta+tt+te+th+to+tr+udm+uk+ur+uz+vi+cy+xh+yi+yo+yua+zu \"{0}\"".format(to_trans)).read()
 			
 			if bool(data.replace("\n","")):
 				lang_dat = data.split("\n")[:-1]
