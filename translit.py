@@ -38,7 +38,7 @@ if __name__ == "__main__":
 						alpha_filter = "".join(filter(lambda x: str(x).isalpha(), str(cc)))
 						#print(_dat, alpha_filter)
 						
-						if count_res(_dat) < 7:
+						if count_res(_dat) > 7:
 							os.system("service tor restart")
 							continue
 						
